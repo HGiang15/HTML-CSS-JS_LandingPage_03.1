@@ -5,6 +5,7 @@
 :root {
     --Primary-color-black: #152427;
     --Primary-color-black-green: #143C3C;
+    --Secondary-color-light-green: #E2EDDF;
     --text-color-black-gray: #575D5E;
 
     --white-color: #fff;
@@ -276,4 +277,29 @@ a {
     transform: rotate(176deg);
     bottom: -40px;
     right: 50px;
+}
+
+/* =============== Brand =============== */
+.brand {
+    margin-top: 42px;
+}
+
+.brand__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 76px 121px;
+    border-radius: 100.5px;
+    background: var(--Secondary-color-light-green);
+}
+
+.brand__link {
+    display: flex;
+    align-items: center;
+    font-size: 2.6rem;
+    color: #163C35;
+}
+
+.brand__text {
+    margin-left: 11px;
 }

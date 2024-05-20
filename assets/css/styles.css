@@ -18,7 +18,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "Public Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 html,
@@ -45,6 +45,7 @@ a {
     line-height: var(--height);
     padding: 0 20px;
     text-align: center;
+    font-family: "Public Sans";
     font-size: 1.8rem;
     font-weight: 500;
     border: 1.5px solid #143c3c;
@@ -98,6 +99,7 @@ a {
     position: relative;
     display: inline-block;
     padding: 0 20px;
+    font-family: "Public Sans";
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.56;
@@ -121,4 +123,157 @@ a {
 
 .header-action__btn {
     margin-left: 88px;
+}
+
+/* =============== Hero =============== */
+.hero-divider {
+    height: 1px;
+    background: linear-gradient(18deg, #fff 0%, #dddcdc 51.25%, rgba(212, 212, 212, 0) 100%);
+}
+
+.hero-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0 88px;
+}
+
+.hero__content {
+    width: 35.5%;
+    flex-shrink: 0;
+}
+
+.hero__heading {
+    width: 368px;
+    font-family: "Public Sans";
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: var(--Primary-color-black);
+}
+
+.hero__desc {
+    margin-top: 20px;
+    font-family: "Public Sans";
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: var(--text-color-black-gray);
+}
+
+.hero-row {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    margin-top: 42px;
+}
+
+.hero-play {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.hero-play__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: transparent;
+    border: 5px solid;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(-45deg);
+    transition: transform 0.5s;
+    cursor: pointer;
+
+}
+
+@keyframes rotateInfinite {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hero-play__btn:hover {
+    animation: rotateInfinite 2s linear infinite;
+}
+
+.hero-play__text:hover {
+    color: #83a17d;
+}
+
+.hero-play__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #83a17d;
+    transform: rotate(45deg);
+}
+
+.hero-play__text {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--Primary-color-black);
+}
+
+.hero__media {
+    position: relative;
+    display: flex;
+    width: 57%;
+}
+
+.hero__images {
+    display: flex;
+    gap: 20px;
+}
+
+.hero__img {
+    width: 202px;
+    height: 466px;
+    object-fit: cover;
+    border-radius: 110px;
+}
+
+.hero__img:nth-child(2) {
+    margin-top: 77px;
+}
+
+.hero__media--bg {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    top: 154px;
+    right: 150px;
+    border-radius: 50%;
+    background: #4dbb9a;
+    filter: blur(137px);
+    z-index: -1;
+}
+
+.hero__img--decor-top {
+    width: 545px;
+    position: absolute;
+    top: 0px;
+    right: 320px;
+}
+
+.hero__img--decor-bottom {
+    width: 545px;
+    position: absolute;
+    transform: rotate(176deg);
+    bottom: -40px;
+    right: 50px;
 }

@@ -62,10 +62,10 @@ a {
 }
 
 .section-heading {
-    color: var(--Primary-color-black);
     font-size: 4.2rem;
     font-weight: 600;
     line-height: 1.24;
+    color: var(--Primary-color-black);
 }
 
 .section-title {
@@ -75,6 +75,30 @@ a {
     font-weight: 500;
     line-height: 1.62;
     color: var(--Primary-color-black);
+}
+
+.section-title::before {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 1px;
+    background-color: var(--Primary-color-black);
+    margin-bottom: 4px;
+    margin-right: 21px;
+}
+
+.lv1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+    color: var(--text-color-light-gray);
+}
+
+.lv2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
+    color: var(--text-color-light-gray);
 }
 
 .lv3 {
@@ -337,15 +361,7 @@ a {
     justify-content: space-between;
 }
 
-.section-title::before {
-    display: inline-block;
-    content: "";
-    width: 25px;
-    height: 1px;
-    background-color: var(--Primary-color-black);
-    margin-bottom: 4px;
-    margin-right: 21px;
-}
+
 
 .service__heading {
     max-width: 520px;
@@ -442,4 +458,170 @@ a {
 }
 
 /* =============== About =============== */
-.about {}
+.about {
+    margin-top: 157px;
+}
+
+.about-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-block {
+    position: relative;
+}
+
+.about__images {
+    display: flex;
+    width: 52%;
+    margin-top: 13px;
+    gap: 21px;
+}
+
+.about__img {
+    width: 284px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 210px;
+    box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+
+.about__img:first-child {
+    margin-top: 90px;
+}
+
+.about__img--decor {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    transform: rotate(12.645deg);
+}
+
+.about-card {
+    position: absolute;
+    bottom: 8px;
+    right: -9px;
+    padding: 19px 23px 12px;
+    border-radius: 8px;
+    background: var(--white-color);
+    box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+}
+
+.about-card__heading {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: var(--Primary-color-black);
+}
+
+.about-card__desc {
+    margin: 6px 0 10px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text-color-black-gray);
+}
+
+.about-card__common {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--Primary-color-black);
+}
+
+.about-card__progres {
+    position: relative;
+    margin: 3px 0;
+    width: 96px;
+    height: 2px;
+    border-radius: 10px;
+    background: #EAEAEA;
+}
+
+.about-card__progres::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    background: #83A17D;
+}
+
+.about-card__load {
+    color: var(--Primary-color-black);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-left: 52px;
+}
+
+.about-card__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px 0 5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #eaeaea;
+}
+
+.about-card__circle::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--Primary-color-black-green);
+}
+
+.about-card__team {
+    display: flex;
+    align-items: center;
+}
+
+.about-card__team--avatar {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+}
+
+.about-card__team--img {
+    width: 16px;
+    height: 16px;
+    margin-left: -6px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--white-color);
+}
+
+.about-content {
+    width: 43%;
+}
+
+.about-content__heading {
+    margin-top: 20px;
+    max-width: 483px;
+}
+
+.about-content__desc {
+    margin-top: 11px;
+}
+
+.about-content__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #83a17d;
+}
+
+.about-content__info {
+    max-width: 364px;
+    margin-left: 24px;
+}
+
+/* =============== Process =============== */
+

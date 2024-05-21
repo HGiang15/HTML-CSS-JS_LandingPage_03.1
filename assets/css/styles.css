@@ -603,7 +603,7 @@ a {
 
 .about-content__heading {
     margin-top: 20px;
-    max-width: 483px;
+    max-width: 520px;
 }
 
 .about-content__desc {
@@ -624,4 +624,114 @@ a {
 }
 
 /* =============== Process =============== */
+.process {
+    margin-top: 79px;
+    padding: 36px 0 74px;
+}
 
+.process__heading {
+    margin-top: 20px;
+    max-width: 520px;
+}
+
+.process__line {
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background: var(--Primary-color-black);
+    margin-left: 8px;
+    margin-bottom: 6px;
+}
+
+.process__list {
+    margin-top: 81px;
+}
+
+.process-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 54px 20px 20px;
+    transition: 0.3s;
+}
+
+.process-item:hover {
+    cursor: pointer;
+    padding: 72px 20px 54px;
+    border-radius: 33px;
+    background: var(--Secondary-color-light-green);
+}
+
+.process-item::before {
+    position: absolute;
+    content: "";
+    width: 1131px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #83a17d 4.17%, rgba(131, 161, 125, 0) 36.46%);
+}
+
+.process-item__number {
+    font-weight: 600;
+    font-size: 7.2rem;
+    line-height: 0.72;
+    color: var(--Primary-color-black-green);
+}
+
+.process-item__name {
+    min-width: 176px;
+    margin-left: 64px;
+}
+
+.process-item__heading {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: var(--Primary-color-black);
+}
+
+.process-item__more {
+    display: none;
+    margin-top: 22px;
+    font-size: 1.8rem;
+    line-height: 1;
+    text-decoration: underline;
+    color: var(--text-color-black-gray);
+    transition: 0.3s;
+}
+
+.process-item:hover .process-item__more {
+    display: block;
+}
+
+.process__img {
+    display: none;
+    transition: 0.3s;
+}
+
+.process-item:hover .process__img {
+    display: block;
+    height: 185px;
+    width: 572px;
+    object-fit: cover;
+    border-radius: 33px;
+}
+
+.process__desc {
+    width: 572px;
+    transition: 0.3s;
+}
+
+.process-item:hover .process__desc {
+    display: none;
+}
+
+.process__describe {
+    margin-left: auto;
+}
+
+/* =============== Feature =============== */
+.feature {
+    
+}

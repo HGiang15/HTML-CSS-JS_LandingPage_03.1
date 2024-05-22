@@ -6,6 +6,8 @@
     --Primary-color-black: #152427;
     --Primary-color-black-green: #143C3C;
     --Secondary-color-light-green: #E2EDDF;
+    --Secondary-color-blue: #83A17D;
+    --Secondary-color-gray: #6A8383;
     --text-color-black-gray: #575D5E;
     --text-color-light-gray: #7D8188;
 
@@ -85,6 +87,14 @@ a {
     background-color: var(--Primary-color-black);
     margin-bottom: 4px;
     margin-right: 21px;
+}
+
+.section-line {
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    margin-left: 8px;
+    margin-bottom: 6px;
 }
 
 .lv1 {
@@ -361,8 +371,6 @@ a {
     justify-content: space-between;
 }
 
-
-
 .service__heading {
     max-width: 520px;
     margin-top: 12px;
@@ -635,12 +643,7 @@ a {
 }
 
 .process__line {
-    display: inline-block;
-    width: 66px;
-    height: 2px;
     background: var(--Primary-color-black);
-    margin-left: 8px;
-    margin-bottom: 6px;
 }
 
 .process__list {
@@ -720,6 +723,7 @@ a {
 
 .process__desc {
     width: 572px;
+    font-family: "Public Sans";
     transition: 0.3s;
 }
 
@@ -733,5 +737,92 @@ a {
 
 /* =============== Feature =============== */
 .feature {
-    
+    margin-top: 74px;
+    padding: 116px 0 63px;
+    background: var(--Primary-color-black-green);
+}
+
+.feature-row {
+    display: flex;
+    align-items: center;
+}
+
+.feature__heading {
+    max-width: 520px;
+    color: #E7F9F9;
+}
+
+.feature__line {
+    background: var(--Secondary-color-blue);
+}
+
+.feature-row__info {
+    width: 50%;
+}
+
+.feature-row__desc {
+    margin-top: 11px;
+    font-family: "Public Sans";
+    color: var(--Secondary-color-gray);
+}
+
+.feature-row__browse {
+    display: flex;
+    margin-top: 13px;
+}
+
+.feature__link {
+    font-family: "Public Sans";
+    color: var(--white-color);
+    padding-right: 26px;
+}
+
+.feature-row__btn {
+    padding: 6px 0;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.feature-row__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #80a07b;
+}
+
+.feature__video--container {
+    position: relative;
+    margin-top: 65px;
+}
+
+.feature__video {
+    width: 100%;
+    border-radius: 22px;
+}
+
+.feature-play__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    border: none;
+}
+
+.feature__winged-circle {
+    position: absolute;
+    right: -50px;
+    top: -72px;
+}
+
+.feature__graphic {
+    position: absolute;
+    top: -165px;
+    right: -45px;
 }

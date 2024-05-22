@@ -826,3 +826,58 @@ a {
     top: -165px;
     right: -45px;
 }
+
+/* =============== Share =============== */
+.share {
+    margin: 140px 0;
+    padding-bottom: 44px;
+}
+
+.share-top {
+    max-width: 548px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.share-top__heading {
+    margin-bottom: 22px;
+}
+
+.share__list {
+    margin-top: 103px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 45px;
+}
+
+.share-item {
+    height: 362px;
+    border-radius: 160px;
+    border: 1.5px solid #cecece;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.share-item:hover {
+    border-radius: 160px;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+    margin-top: -58px;
+}
+
+.share-item__heading {
+    margin: 26px 0 9px;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--Primary-color-black);
+}
+
+.share-item__desc {
+    max-width: 286px;
+}

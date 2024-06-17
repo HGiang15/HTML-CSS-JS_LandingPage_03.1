@@ -13,7 +13,6 @@
 
     --white-color: #fff;
     --black-color: #000;
-
 }
 
 html {
@@ -141,8 +140,8 @@ a {
 .header {
     position: sticky;
     top: -16px;
-    z-index: 3;
-    background: transparent;
+    z-index: 1;
+    background: #fff;
 }
 
 .header.scrolled {

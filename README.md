@@ -4,7 +4,7 @@ Welcome to **Modulars**, a comprehensive web design course aimed at equipping yo
 
 ## 🚀 Live Demo
 
-Experience the live demo [here](https://your-live-demo-link.com).
+Experience the live demo [here](https://hgiang15.github.io/HTML-CSS-JS_LandingPage_03.1/).
 
 ## ✨ Features
 
@@ -21,6 +21,7 @@ Get started with a local copy of the project in just a few steps:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/HGiang15/HTML-CSS-JS_LandingPage_03.1.git
+   ```
 2. **Navigate to the project directory:**
    ```bash
    cd HTML-CSS-JS_LandingPage_03.1
@@ -28,12 +29,13 @@ Get started with a local copy of the project in just a few steps:
 
 ## 📚 About Modulars
 
-Modulars is an in-depth web design course designed to teach you how to create beautiful and functional websites. 
-Our curriculum covers everything from basic HTML and CSS to advanced JavaScript techniques, all while emphasizing modular design principles. 
-Whether you're a beginner or an experienced developer looking to refine your skills, Modulars provides the tools and knowledge you need to succeed 
+Modulars is an in-depth web design course designed to teach you how to create beautiful and functional websites.
+Our curriculum covers everything from basic HTML and CSS to advanced JavaScript techniques, all while emphasizing modular design principles.
+Whether you're a beginner or an experienced developer looking to refine your skills, Modulars provides the tools and knowledge you need to succeed
 in web design.
 
 ##🎓 Course Curriculum
+
 - **HTML Fundamentals**: Learn the building blocks of web development.
 - **CSS Styling**: Master the art of styling websites to make them visually appealing.
 - **JavaScript Basics**: Understand the fundamentals of JavaScript for adding interactivity.
@@ -41,11 +43,13 @@ in web design.
 - **Advanced Topics**: Explore more complex subjects such as CSS Grid, Flexbox, and JavaScript frameworks.
 
 ## 📚 Key Learning Outcomes
+
 - Build Responsive Websites: Create sites that work seamlessly on any device.
 - Understand Modular Design: Learn how to structure your code for maximum efficiency and scalability.
 - Enhance User Experience: Use JavaScript to add interactive elements that improve usability.
 - Develop Professional Skills: Gain the knowledge needed to build modern, professional websites.
 
-##  👨‍🏫 Instructor
-Your course instructor is a seasoned web developer with years of experience in the industry. 
+## 👨‍🏫 Instructor
+
+Your course instructor is a seasoned web developer with years of experience in the industry.
 Passionate about teaching and sharing knowledge, they are dedicated to helping you achieve your web design goals.

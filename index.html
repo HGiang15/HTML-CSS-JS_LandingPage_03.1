@@ -37,12 +37,22 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <div class="header-content">
+                <!-- Tablet/Mobile menu -->
+                <label for="menu-checkbox" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </label>
+
                 <!-- Logo -->
                 <a href="./index.html">
                     <img src="./assets/img/logo_1.svg" alt="" class="logo">
@@ -50,7 +60,7 @@
 
                 <!-- Navbar -->
                 <nav class="navbar">
-                    <ul class="navbar__list">
+                    <ul class="navbar__list" id="pc-nav">
                         <li class="navbar-item">
                             <a id="homeLink" href="#" class="navbar__link navbar__link--active">Home</a>
                         </li>
@@ -63,6 +73,9 @@
                         <li class="navbar-item">
                             <a href="#contact" class="navbar__link">Contact</a>
                         </li>
+                        <li class="navbar-item show-on-mobile separate">
+                            <a href="#contact" class="navbar__link">Sign Up</a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -71,6 +84,25 @@
                     <a href="./signup.html" class="btn header-action__btn">Sign Up</a>
                 </div>
             </div>
+        </div>
+    </header>
+
+    <!-- Tablet/mobile header -->
+    <header class="mobile-header">
+        <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+
+        <!-- Overlay -->
+        <label for="menu-checkbox" class="menu-overlay"></label>
+
+        <!-- Menu content -->
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <a href="./index.html">
+                <img src="./assets/img/logo_1.svg" alt="">
+            </a>
+
+            <!-- Nav -->
+            <ul id="mobile-nav"></ul>
         </div>
     </header>
 
@@ -296,7 +328,7 @@
             <div class="container">
                 <p class="section-title">OUR PROCESS</p>
                 <h2 class="process__heading section-heading">
-                    A simple ,yet effective three step process
+                    A simple , yet effective three step process
                     <span class="section-line process__line"></span>
                 </h2>
 
@@ -389,7 +421,7 @@
                         <source src="./assets/video/feature-video.mp4" type="video/mp4">
                     </video>
 
-                    <button class="feature-play__btn" id="playButton" style="">
+                    <button class="feature-play__btn" id="playButton">
                         <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M25.5828 14.1411C26.2513 14.5227 26.256 15.485 25.5912 15.8731L1.65877 29.8459C0.993978 30.2341 0.158321 29.757 0.154581 28.9872L0.0199589 1.2747C0.0162194 0.50491 0.847206 0.0197453 1.51573 0.401403L25.5828 14.1411Z"
@@ -550,10 +582,10 @@
             <div class="footer-body">
                 <section class="footer-section">
                     <h2 class="footer__heading">Sign up for our newsletter</h2>
-                    <div class="email-subcribe">
+                    <div class="email-subscribe">
                         <input class="email-input" type="email" name="email" id="email" placeholder="Enter your email">
-                        <button class="subcribe-btn">
-                            <svg class="subcribe-btn__arrow" width="28" height="18" viewBox="0 0 28 18" fill="none"
+                        <button class="subscribe-btn">
+                            <svg class="subscribe-btn__arrow" width="28" height="18" viewBox="0 0 28 18" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 9H27M27 9L18.3333 1M27 9L18.3333 17" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />

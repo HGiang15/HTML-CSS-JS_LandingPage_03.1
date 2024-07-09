@@ -1,3 +1,11 @@
+//Header
+// cop menu PC to menu Mobile
+const pcNav = document.querySelector("#pc-nav");
+const mobileNav = document.querySelector("#mobile-nav");
+
+// cop from PC nav to Mobile nav
+mobileNav.innerHTML = pcNav.innerHTML;
+
 // Navbar
 const links = document.querySelectorAll(".navbar__link");
 const homeLink = document.getElementById("homeLink");
@@ -36,60 +44,12 @@ function scrollToTop() {
   });
 }
 
-// Show the scroll-to-top button when scrolling down
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("scrollToTopBtn").style.display = "block";
-  } else {
-    document.getElementById("scrollToTopBtn").style.display = "none";
-  }
-}
-
-// Show the scroll-to-top button when scrolling down
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("scrollToTopBtn").style.display = "block";
-  } else {
-    document.getElementById("scrollToTopBtn").style.display = "none";
-  }
-}
-
-const video = document.getElementById("myVideo");
+// Feature Video
 const playButton = document.getElementById("playButton");
-
+const videoPlayer = document.getElementById("myVideo");
 playButton.addEventListener("click", () => {
-  if (video.paused) {
-    video.play();
-    playButton.style.display = "none";
-  } else {
-    video.pause();
-  }
-});
-
-video.addEventListener("play", () => {
+  // Play video
+  videoPlayer.play();
+  // Hide the play button
   playButton.style.display = "none";
-});
-
-video.addEventListener("pause", () => {
-  playButton.style.display = "block";
-});
-document.addEventListener("scroll", function () {
-  var header = document.querySelector(".header");
-  var scrollPosition = window.scrollY;
-
-  // Điều kiện kiểm tra khi nào nên thêm/xóa lớp 'scrolled'
-  if (scrollPosition > 100) {
-    // Ví dụ, nếu cuộn xuống 100px thì thêm lớp
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
 });

@@ -45,14 +45,6 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <!-- Tablet/Mobile menu -->
-                <label for="menu-checkbox" class="toggle-menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path fill="currentColor"
-                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-                    </svg>
-                </label>
-
                 <!-- Logo -->
                 <a href="./index.html">
                     <img src="./assets/img/logo_1.svg" alt="" class="logo">
@@ -83,6 +75,14 @@
                 <div class="header-action">
                     <a href="./signup.html" class="btn header-action__btn">Sign Up</a>
                 </div>
+
+                <!-- Tablet/Mobile menu -->
+                <label for="menu-checkbox" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </label>
             </div>
         </div>
     </header>
@@ -196,64 +196,83 @@
                     </div>
                 </div>
 
-                <div class="service__list">
-                    <!-- Service item 1 -->
-                    <article class="service-item">
-                        <figure class="service-item__thumb">
-                            <a href="#!">
-                                <img src="./assets/img/service-img-1.png" alt="Branding" class="service-item__img">
-                            </a>
-                        </figure>
-                        <div class="service-item__info">
-                            <a href="#!">
-                                <h3 class="service-item__heading">Branding</h3>
-                            </a>
-                            <p class="service-item__desc lv3">
-                                Create beautiful Agency website with
-                                Boluethat converts more visitors than
-                                any website.
-                            </p>
-                        </div>
-                    </article>
+                <div class="service-body">
+                    <!-- Slide button -->
+                    <button class="mobile-btn mobile-btn--disable service-top__control__btn show-on-mobile">
+                        <svg class="mobile-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="currentColor"
+                                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                        </svg>
+                    </button>
 
-                    <!-- Service item 2 -->
-                    <article class="service-item">
-                        <figure class="service-item__thumb">
-                            <a href="#!">
-                                <img src="./assets/img/service-img-2.png" alt="Web Design" class="service-item__img">
-                            </a>
-                        </figure>
-                        <div class="service-item__info">
-                            <a href="#!">
-                                <h3 class="service-item__heading">Web Design</h3>
-                            </a>
-                            <p class="service-item__desc lv3">
-                                Create beautiful Agency website with
-                                Boluethat converts more visitors than
-                                any website.
-                            </p>
-                        </div>
-                    </article>
+                    <div class="service__list">
+                        <!-- Service item 1 -->
+                        <article class="service-item">
+                            <figure class="service-item__thumb">
+                                <a href="#!">
+                                    <img src="./assets/img/service-img-1.png" alt="Branding" class="service-item__img">
+                                </a>
+                            </figure>
+                            <div class="service-item__info">
+                                <a href="#!">
+                                    <h3 class="service-item__heading">Branding</h3>
+                                </a>
+                                <p class="service-item__desc lv3">
+                                    Create beautiful Agency website with
+                                    Boluethat converts more visitors than
+                                    any website.
+                                </p>
+                            </div>
+                        </article>
 
-                    <!-- Service item 3 -->
-                    <article class="service-item">
-                        <figure class="service-item__thumb">
-                            <a href="#!">
-                                <img src="./assets/img/service-img-3.png" alt="Graphic Design"
-                                    class="service-item__img">
-                            </a>
-                        </figure>
-                        <div class="service-item__info">
-                            <a href="#!">
-                                <h3 class="service-item__heading">Graphic Design</h3>
-                            </a>
-                            <p class="service-item__desc lv3">
-                                Create beautiful Agency website with
-                                Boluethat converts more visitors than
-                                any website.
-                            </p>
-                        </div>
-                    </article>
+                        <!-- Service item 2 -->
+                        <article class="service-item">
+                            <figure class="service-item__thumb">
+                                <a href="#!">
+                                    <img src="./assets/img/service-img-2.png" alt="Web Design"
+                                        class="service-item__img">
+                                </a>
+                            </figure>
+                            <div class="service-item__info">
+                                <a href="#!">
+                                    <h3 class="service-item__heading">Web Design</h3>
+                                </a>
+                                <p class="service-item__desc lv3">
+                                    Create beautiful Agency website with
+                                    Boluethat converts more visitors than
+                                    any website.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Service item 3 -->
+                        <article class="service-item">
+                            <figure class="service-item__thumb">
+                                <a href="#!">
+                                    <img src="./assets/img/service-img-3.png" alt="Graphic Design"
+                                        class="service-item__img">
+                                </a>
+                            </figure>
+                            <div class="service-item__info">
+                                <a href="#!">
+                                    <h3 class="service-item__heading">Graphic Design</h3>
+                                </a>
+                                <p class="service-item__desc lv3">
+                                    Create beautiful Agency website with
+                                    Boluethat converts more visitors than
+                                    any website.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Slide button -->
+                    <button class="mobile-btn mobile-btn--enable service-top__control__btn show-on-mobile">
+                        <svg class="mobile-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="currentColor"
+                                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
@@ -440,7 +459,7 @@
             <div class="container">
                 <div class="share-top">
                     <h2 class="share-top__heading section-heading">Share the features that help your customers</h2>
-                    <p class="lv2">
+                    <p class="share-top__desc lv2">
                         You already know that the customer experience doesn't end with
                         a sale — it's an ongoing work in progress that companies should
                         be constantly seeking to improve and iterate on.
@@ -577,6 +596,31 @@
 
     </main>
 
+    <!-- Mobile Footer -->
+    <footer class="mobile-menu">
+        <input type="checkbox" name="" id="footer-checkbox" class="menu-checkbox" hidden />
+
+        <!-- Overlay -->
+        <label for="footer-checkbox" class="menu-overlay"></label>
+
+        <!-- Content -->
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <a href="/">
+                <img src="./assets/img/logo_1.svg" alt="MODULARS" />
+            </a>
+
+            <ul class="footer-nav">
+                <li class="nav__item"><a href="#!" class="nav__item-link nav__item-link--active">Pages</a></li>
+                <li><a href="#!" class="nav__item-link">Product</a></li>
+                <li><a href="#!" class="nav__item-link">Overview</a></li>
+                <li><a href="#!" class="nav__item-link">About us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- PC Footer -->
     <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-body">
@@ -604,6 +648,14 @@
                         <a href="#!" class="footer-social__icon">
                             <img src="./assets/icons/twitter.svg" alt="" class="social-icon__img">
                         </a>
+
+                        <!-- Footer Mobile -->
+                        <label for="footer-checkbox" class="toggle-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="currentColor"
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                            </svg>
+                        </label>
                     </div>
                 </section>
 

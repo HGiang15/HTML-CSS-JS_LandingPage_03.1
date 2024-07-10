@@ -480,6 +480,10 @@
         padding: 50px;
     }
 
+    .brand__link {
+        grid-column: span 2;
+    }
+
     .brand__list a:nth-child(1) .brand_img {
         width: 84px;
         height: 24px;
@@ -495,8 +499,14 @@
         height: 31px;
     }
 
+    .brand__wrap {
+        display: flex;
+        align-items: center;
+    }
+
     .brand__text {
-        font-size: 1.9rem;
+        margin-left: 0;
+        font-size: 1.8rem;
     }
 
     .brand__list a:nth-child(4) .brand_img {

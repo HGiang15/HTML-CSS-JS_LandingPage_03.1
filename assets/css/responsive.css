@@ -404,7 +404,9 @@
 
     .header-content .logo {
         width: 110px;
-        left: 30px;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
     }
 
     .menu-drawer {
@@ -414,6 +416,15 @@
 
     .header-action {
         display: none;
+    }
+
+    .header-content {
+        justify-content: space-between;
+    }
+
+    .bell {
+        display: block;
+        width: 20px;
     }
 
     /* Hero */
